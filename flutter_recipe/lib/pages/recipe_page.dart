@@ -16,9 +16,8 @@ class RecipePage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(
           horizontal: 20,
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+        child: ListView(
+          children: const [
             RecipeTitle(),
             RecipeMenu(),
             RecipeListItem(imageName: 'coffee', title: 'Made Coffee'),
@@ -35,18 +34,18 @@ class RecipePage extends StatelessWidget {
       backgroundColor: Colors.white,
       elevation: 1.0,
       actions: [
-        Icon(
+        const Icon(
           CupertinoIcons.search,
           color: Colors.black,
         ),
-        SizedBox(
+        const SizedBox(
           width: 15,
         ),
-        Icon(
+        const Icon(
           CupertinoIcons.heart,
           color: Colors.black,
         ),
-        SizedBox(
+        const SizedBox(
           width: 15,
         ),
       ],

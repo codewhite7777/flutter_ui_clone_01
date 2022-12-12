@@ -23,15 +23,15 @@ class ProfileButtons extends StatelessWidget {
         width: 150,
         height: 45,
         alignment: Alignment.center,
-        child: Text(
+        decoration: BoxDecoration(
+          color: Colors.blue,
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: const Text(
           'Follow',
           style: TextStyle(
             color: Colors.white,
           ),
-        ),
-        decoration: BoxDecoration(
-          color: Colors.blue,
-          borderRadius: BorderRadius.circular(10),
         ),
       ),
     );
@@ -46,13 +46,13 @@ class ProfileButtons extends StatelessWidget {
         alignment: Alignment.center,
         width: 150,
         height: 45,
-        child: Text(
-          'Message',
-          style: TextStyle(color: Colors.black),
-        ),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           border: Border.all(),
+        ),
+        child: const Text(
+          'Message',
+          style: TextStyle(color: Colors.black),
         ),
       ),
     );

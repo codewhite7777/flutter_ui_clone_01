@@ -7,11 +7,11 @@ class ProfileHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        SizedBox(
+        const SizedBox(
           width: 20,
         ),
         _buildHeaderAvatar(),
-        SizedBox(
+        const SizedBox(
           width: 20,
         ),
         _buildHeaderProfile(),
@@ -20,7 +20,7 @@ class ProfileHeader extends StatelessWidget {
   }
 
   Widget _buildHeaderAvatar() {
-    return SizedBox(
+    return const SizedBox(
       height: 100,
       width: 100,
       child: CircleAvatar(
@@ -32,7 +32,7 @@ class ProfileHeader extends StatelessWidget {
   Widget _buildHeaderProfile() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
+      children: const [
         Text(
           'GetinThere',
           style: TextStyle(

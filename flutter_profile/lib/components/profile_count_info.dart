@@ -22,14 +22,14 @@ class ProfileCountInfo extends StatelessWidget {
       children: [
         Text(
           count,
-          style: TextStyle(fontSize: 15),
+          style: const TextStyle(fontSize: 15),
         ),
-        SizedBox(
+        const SizedBox(
           height: 2,
         ),
         Text(
           title,
-          style: TextStyle(fontSize: 15),
+          style: const TextStyle(fontSize: 15),
         ),
       ],
     );

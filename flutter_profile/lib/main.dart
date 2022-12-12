@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: theme(),
-      home: ProfilePage(),
+      home: const ProfilePage(),
     );
   }
 }
@@ -29,9 +29,9 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _buildProfileAppBar(),
-      endDrawer: ProfileDrawer(),
+      endDrawer: const ProfileDrawer(),
       body: Column(
-        children: [
+        children: const [
           SizedBox(
             height: 20,
           ),
@@ -56,13 +56,13 @@ class ProfilePage extends StatelessWidget {
     return AppBar(
       backgroundColor: Colors.white,
       centerTitle: true,
-      title: Text(
+      title: const Text(
         'Profile',
         style: TextStyle(
           color: Colors.black,
         ),
       ),
-      leading: Icon(
+      leading: const Icon(
         Icons.arrow_back_ios,
       ),
     );

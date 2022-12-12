@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 ThemeData theme() {
   return ThemeData(
     primaryColor: Colors.white,
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       iconTheme: IconThemeData(
         color: Colors.blue,
       ),

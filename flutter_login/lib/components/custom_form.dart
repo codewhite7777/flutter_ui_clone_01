@@ -13,17 +13,17 @@ class CustomForm extends StatelessWidget {
       key: _formKey,
       child: Column(
         children: [
-          CustomTextFormField(text: 'Email'),
-          SizedBox(height: midium_gap),
-          CustomTextFormField(text: 'Password'),
-          SizedBox(height: large_gap),
+          const CustomTextFormField(text: 'Email'),
+          const SizedBox(height: midium_gap),
+          const CustomTextFormField(text: 'Password'),
+          const SizedBox(height: large_gap),
           TextButton(
             onPressed: () {
               if (_formKey.currentState!.validate()) {
                 Navigator.pushNamed(context, '/home');
               }
             },
-            child: Text('Login'),
+            child: const Text('Login'),
           ),
         ],
       ),

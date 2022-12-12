@@ -13,11 +13,11 @@ class LoginPage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: ListView(
           children: [
-            SizedBox(
+            const SizedBox(
               height: xlarge_gap,
             ),
-            Logo(title: 'Login'),
-            SizedBox(height: large_gap),
+            const Logo(title: 'Login'),
+            const SizedBox(height: large_gap),
             CustomForm(),
           ],
         ),

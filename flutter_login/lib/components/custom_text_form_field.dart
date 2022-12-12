@@ -15,7 +15,7 @@ class CustomTextFormField extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(text),
-        SizedBox(
+        const SizedBox(
           height: small_gap,
         ),
         TextFormField(

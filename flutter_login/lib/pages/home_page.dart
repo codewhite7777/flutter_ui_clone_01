@@ -8,17 +8,17 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            SizedBox(height: 200),
-            Logo(title: 'Care Soft'),
-            SizedBox(height: 50),
+            const SizedBox(height: 200),
+            const Logo(title: 'Care Soft'),
+            const SizedBox(height: 50),
             TextButton(
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: Text('Get Started'),
+              child: const Text('Get Started'),
             ),
           ],
         ),

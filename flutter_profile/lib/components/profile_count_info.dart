@@ -18,10 +18,28 @@ class ProfileCountInfo extends StatelessWidget {
   }
 
   Widget _buildInfo(String count, String title) {
-    return SizedBox();
+    return Column(
+      children: [
+        Text(
+          count,
+          style: TextStyle(fontSize: 15),
+        ),
+        SizedBox(
+          height: 2,
+        ),
+        Text(
+          title,
+          style: TextStyle(fontSize: 15),
+        ),
+      ],
+    );
   }
 
   Widget _buildLine() {
-    return SizedBox();
+    return Container(
+      height: 60,
+      width: 2,
+      color: Colors.blue,
+    );
   }
 }

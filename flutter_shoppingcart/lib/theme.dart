@@ -5,7 +5,7 @@ ThemeData theme() {
   return ThemeData(
     primaryColor: kPrimaryColor,
     scaffoldBackgroundColor: kPrimaryColor,
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       backgroundColor: Colors.white,
       iconTheme: IconThemeData(
         color: Colors.black,

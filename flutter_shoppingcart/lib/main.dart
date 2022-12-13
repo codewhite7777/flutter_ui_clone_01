@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: theme(),
-      home: ShoppingCartPage(),
+      home: const ShoppingCartPage(),
     );
   }
 }
@@ -27,7 +27,7 @@ class ShoppingCartPage extends StatelessWidget {
     return Scaffold(
       appBar: _buildAppBar(),
       body: Column(
-        children: [
+        children: const [
           ShoppingCartHeader(),
           ShoppingCartDetail(),
         ],
@@ -39,7 +39,7 @@ class ShoppingCartPage extends StatelessWidget {
     return AppBar(
       elevation: 0.0,
       leading: IconButton(
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_back,
         ),
         onPressed: () {},
@@ -47,9 +47,9 @@ class ShoppingCartPage extends StatelessWidget {
       actions: [
         IconButton(
           onPressed: () {},
-          icon: Icon(Icons.shopping_cart),
+          icon: const Icon(Icons.shopping_cart),
         ),
-        SizedBox(
+        const SizedBox(
           width: 16,
         ),
       ],

@@ -8,7 +8,7 @@ class HomeBodyBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: gap_m),
+      padding: const EdgeInsets.only(top: gap_m),
       child: Stack(
         children: [
           _buildBannerImage(),
@@ -34,21 +34,21 @@ class HomeBodyBanner extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            constraints: BoxConstraints(maxWidth: 250),
+            constraints: const BoxConstraints(maxWidth: 250),
             child: Text(
               '이제, 여행은 가까운 곳에서',
               style: h4(mColor: Colors.white),
             ),
           ),
-          SizedBox(height: gap_m),
+          const SizedBox(height: gap_m),
           Container(
-            constraints: BoxConstraints(maxWidth: 250),
+            constraints: const BoxConstraints(maxWidth: 250),
             child: Text(
               '새로운 공간에 머물러 보세요. 살아보기, 출장, 여행 등 다양한 목적에 맞는 숙소를 찾아보세요.',
               style: subtitle1(mColor: Colors.white),
             ),
           ),
-          SizedBox(height: gap_m),
+          const SizedBox(height: gap_m),
           SizedBox(
             height: 35,
             width: 170,

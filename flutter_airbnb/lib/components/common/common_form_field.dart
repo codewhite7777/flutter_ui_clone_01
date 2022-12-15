@@ -18,14 +18,14 @@ class CommonFormField extends StatelessWidget {
         TextFormField(
           textAlignVertical: TextAlignVertical.bottom,
           decoration: InputDecoration(
-            contentPadding: EdgeInsets.only(top: 30, left: 20, bottom: 10),
+            contentPadding: const EdgeInsets.only(top: 30, left: 20, bottom: 10),
             hintText: hintText,
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 color: Colors.black,
                 width: 2,
               ),

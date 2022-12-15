@@ -13,7 +13,7 @@ class HomeBody extends StatelessWidget {
       child: SizedBox(
         width: bodyWidth,
         child: Column(
-          children: [
+          children: const [
             HomeBodyBanner(),
             HomeBodyPopular(),
           ],

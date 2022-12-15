@@ -41,5 +41,5 @@ TextStyle overline({Color mColor = Colors.black}) {
 }
 
 TextStyle body1({Color mColor = Colors.black}) {
-  return TextStyle(fontSize: 16, color: Colors.black);
+  return const TextStyle(fontSize: 16, color: Colors.black);
 }

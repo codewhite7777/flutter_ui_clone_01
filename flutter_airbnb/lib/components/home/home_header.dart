@@ -12,14 +12,14 @@ class HomeHeader extends StatelessWidget {
       width: double.infinity,
       height: header_height,
       child: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('asset/images/background.jpeg'),
             fit: BoxFit.cover,
           ),
         ),
         child: Column(
-          children: [
+          children: const [
             HomeHeaderAppBar(),
             HomeHeaderForm(),
           ],

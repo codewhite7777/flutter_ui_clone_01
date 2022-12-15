@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_airbnb/style.dart';
 
-class CommonField extends StatelessWidget {
+class CommonFormField extends StatelessWidget {
   final prefixText;
   final hintText;
 
-  const CommonField({
+  const CommonFormField({
     Key? key,
     this.prefixText,
     this.hintText,

@@ -9,10 +9,10 @@ class MoreScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('더보기'),
+        title: const Text('더보기'),
       ),
       body: Padding(
-        padding: EdgeInsets.only(top: 30),
+        padding: const EdgeInsets.only(top: 30),
         child: GridView.count(
           crossAxisCount: 4,
           children: List.generate(
@@ -20,7 +20,7 @@ class MoreScreen extends StatelessWidget {
             (index) => Column(
               children: [
                 Icon(tabs[index].icon),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Text(tabs[index].text),
               ],
             ),

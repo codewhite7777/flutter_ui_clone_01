@@ -15,16 +15,16 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(
           elevation: 0.0,
           backgroundColor: Colors.white,
-          toolbarTextStyle: TextTheme(
+          toolbarTextStyle: const TextTheme(
             headline6: TextStyle(color: Colors.black, fontSize: 24),
           ).bodyText2,
-          titleTextStyle: TextTheme(
+          titleTextStyle: const TextTheme(
             headline6: TextStyle(color: Colors.black, fontSize: 24),
           ).headline6,
         ),
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
       ),
-      home: MainScreen(),
+      home: const MainScreen(),
     );
   }
 }

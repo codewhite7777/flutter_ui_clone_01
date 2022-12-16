@@ -20,7 +20,7 @@ class _ChatRoomScreenState extends State<ChatRoomScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xFFb2c7da),
+      color: const Color(0xFFb2c7da),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
@@ -30,7 +30,7 @@ class _ChatRoomScreenState extends State<ChatRoomScreen> {
             '홍길동',
             style: Theme.of(context).textTheme.headline6,
           ),
-          actions: [
+          actions: const [
             Icon(
               FontAwesomeIcons.magnifyingGlass,
               size: 20,
@@ -49,16 +49,16 @@ class _ChatRoomScreenState extends State<ChatRoomScreen> {
               Expanded(
                 child: SingleChildScrollView(
                   child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Column(
                       children: [
-                        TimeLine(time: '2022년 1월 1일 금요일'),
-                        OtherChat(
+                        const TimeLine(time: '2022년 1월 1일 금요일'),
+                        const OtherChat(
                           name: '홍길동',
                           text: '새해 복 많이 받으세요.',
                           time: '오전 10:10',
                         ),
-                        MyChat(
+                        const MyChat(
                           text: '선생님도 많이 받으십시오',
                           time: '오후 2:15',
                         ),
@@ -73,25 +73,23 @@ class _ChatRoomScreenState extends State<ChatRoomScreen> {
                 color: Colors.white,
                 child: Row(
                   children: [
-                    ChatIconButton(
+                    const ChatIconButton(
                       icon: Icon(FontAwesomeIcons.squarePlus),
                     ),
                     Expanded(
-                      child: Container(
-                        child: TextField(
-                          controller: _textController,
-                          maxLines: 1,
-                          style: TextStyle(fontSize: 20),
-                          decoration: InputDecoration(
-                            focusedBorder: InputBorder.none,
-                            enabledBorder: InputBorder.none,
-                          ),
-                          onSubmitted: _handleSubmmited,
+                      child: TextField(
+                        controller: _textController,
+                        maxLines: 1,
+                        style: const TextStyle(fontSize: 20),
+                        decoration: const InputDecoration(
+                          focusedBorder: InputBorder.none,
+                          enabledBorder: InputBorder.none,
                         ),
+                        onSubmitted: _handleSubmmited,
                       ),
                     ),
-                    ChatIconButton(icon: Icon(FontAwesomeIcons.faceSmile)),
-                    ChatIconButton(icon: Icon(FontAwesomeIcons.gear)),
+                    const ChatIconButton(icon: Icon(FontAwesomeIcons.faceSmile)),
+                    const ChatIconButton(icon: Icon(FontAwesomeIcons.gear)),
                   ],
                 ),
               ),

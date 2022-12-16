@@ -19,7 +19,7 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       body: IndexedStack(
         index: _selectedIndex,
-        children: [
+        children: const [
           FriendScreen(),
           ChatScreen(),
           MoreScreen(),
@@ -32,7 +32,7 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: Colors.grey[100],
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.black54,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.user),
             label: '',

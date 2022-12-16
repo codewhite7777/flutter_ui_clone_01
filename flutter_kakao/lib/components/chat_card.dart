@@ -17,13 +17,13 @@ class ChatCard extends StatelessWidget {
         Navigator.of(context).push(
           MaterialPageRoute(
             builder: (BuildContext context) {
-              return ChatRoomScreen();
+              return const ChatRoomScreen();
             },
           ),
         );
       },
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
         child: Row(
           children: [
             Expanded(
@@ -34,29 +34,29 @@ class ChatCard extends StatelessWidget {
                 ),
                 title: Text(
                   chat.title,
-                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
+                  style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
                 ),
                 subtitle: Text(chat.content),
-                contentPadding: EdgeInsets.all(0),
+                contentPadding: const EdgeInsets.all(0),
               ),
             ),
             Column(
               children: [
                 Text(
                   chat.time,
-                  style: TextStyle(color: Color(0xFFa5a5a5), fontSize: 12),
+                  style: const TextStyle(color: Color(0xFFa5a5a5), fontSize: 12),
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 if (chat.count != '0')
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: Color(0xFFde6344),
+                      color: const Color(0xFFde6344),
                     ),
                     child: Text(
                       chat.count,
-                      style: TextStyle(color: Colors.white, fontSize: 12),
+                      style: const TextStyle(color: Colors.white, fontSize: 12),
                     ),
                   ),
               ],

@@ -10,20 +10,20 @@ class FriendScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('친구'),
+        title: const Text('친구'),
         centerTitle: false,
       ),
       body: Column(
         children: [
-          SizedBox(),
+          const SizedBox(),
           ProfileCard(user: me),
-          Divider(),
+          const Divider(),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Row(
               children: [
-                Text('친구'),
-                SizedBox(width: 6),
+                const Text('친구'),
+                const SizedBox(width: 6),
                 Text('${friends.length}'),
               ],
             ),

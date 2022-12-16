@@ -10,7 +10,7 @@ class ChatScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('채팅'),
+        title: const Text('채팅'),
         centerTitle: false,
       ),
       body: ListView(

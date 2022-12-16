@@ -15,10 +15,10 @@ class BottomIconButton extends StatelessWidget {
     return Column(
       children: [
         Icon(icon, color: Colors.white, size: 25),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Text(
           text,
-          style: TextStyle(color: Colors.white, fontSize: 12),
+          style: const TextStyle(color: Colors.white, fontSize: 12),
         ),
       ],
     );

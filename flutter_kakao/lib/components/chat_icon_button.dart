@@ -11,7 +11,7 @@ class ChatIconButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      padding: EdgeInsets.symmetric(horizontal: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 15),
       onPressed: () {},
       icon: icon,
       iconSize: 25,

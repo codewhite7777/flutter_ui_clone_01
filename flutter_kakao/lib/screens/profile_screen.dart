@@ -29,13 +29,13 @@ class ProfileScreen extends StatelessWidget {
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: Icon(
+            icon: const Icon(
               FontAwesomeIcons.xmark,
               size: 30,
               color: Colors.white,
             ),
           ),
-          actions: [
+          actions: const [
             RoundIconButton(icon: FontAwesomeIcons.gift),
             SizedBox(width: 15),
             RoundIconButton(icon: FontAwesomeIcons.gear),
@@ -44,7 +44,7 @@ class ProfileScreen extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Spacer(),
+            const Spacer(),
             Container(
               width: 110,
               height: 110,
@@ -56,18 +56,18 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Text(
               user.name,
-              style: TextStyle(color: Colors.white, fontSize: 20),
+              style: const TextStyle(color: Colors.white, fontSize: 20),
             ),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             Text(
               user.intro,
-              style: TextStyle(color: Colors.white, fontSize: 15),
+              style: const TextStyle(color: Colors.white, fontSize: 15),
             ),
-            SizedBox(height: 20),
-            Divider(color: Colors.white),
+            const SizedBox(height: 20),
+            const Divider(color: Colors.white),
             user.name == me.name ? _buildMyIcons() : _buildFriendIcons(),
           ],
         ),
@@ -77,10 +77,10 @@ class ProfileScreen extends StatelessWidget {
 
   Widget _buildMyIcons() {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 18),
+      padding: const EdgeInsets.symmetric(vertical: 18),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
+        children: const [
           BottomIconButton(icon: FontAwesomeIcons.comment, text: '나와의 채팅'),
           SizedBox(width: 50),
           BottomIconButton(icon: FontAwesomeIcons.pen, text: '프로필 편집'),
@@ -91,10 +91,10 @@ class ProfileScreen extends StatelessWidget {
 
   Widget _buildFriendIcons() {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 18),
+      padding: const EdgeInsets.symmetric(vertical: 18),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
+        children: const [
           BottomIconButton(icon: FontAwesomeIcons.comment, text: '1:1 채팅'),
           SizedBox(width: 50),
           BottomIconButton(icon: FontAwesomeIcons.phone, text: '통화하기'),

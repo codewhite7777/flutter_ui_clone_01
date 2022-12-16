@@ -15,9 +15,12 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(
           elevation: 0.0,
           backgroundColor: Colors.white,
-          textTheme: TextTheme(
+          toolbarTextStyle: TextTheme(
             headline6: TextStyle(color: Colors.black, fontSize: 24),
-          ),
+          ).bodyText2,
+          titleTextStyle: TextTheme(
+            headline6: TextStyle(color: Colors.black, fontSize: 24),
+          ).headline6,
         ),
         iconTheme: IconThemeData(color: Colors.black),
       ),

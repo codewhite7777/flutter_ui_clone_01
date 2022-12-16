@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_kakao/model/chat.dart';
+import 'package:flutter_kakao/screens/chat_room_screen.dart';
 
 class ChatCard extends StatelessWidget {
   final Chat chat;
@@ -12,7 +13,15 @@ class ChatCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (BuildContext context) {
+              return ChatRoomScreen();
+            },
+          ),
+        );
+      },
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
         child: Row(

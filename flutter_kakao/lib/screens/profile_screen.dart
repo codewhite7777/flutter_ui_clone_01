@@ -17,7 +17,7 @@ class ProfileScreen extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: NetworkImage(user.backgoundImage),
+          image: NetworkImage(user.backgroundImage),
           fit: BoxFit.fitHeight,
         ),
       ),
@@ -52,7 +52,7 @@ class ProfileScreen extends StatelessWidget {
                 shape: BoxShape.circle,
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: NetworkImage(user.backgoundImage),
+                  image: NetworkImage(user.backgroundImage),
                 ),
               ),
             ),

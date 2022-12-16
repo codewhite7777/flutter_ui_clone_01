@@ -26,7 +26,7 @@ class ProfileCard extends StatelessWidget {
         },
         child: ListTile(
           leading: CircleAvatar(
-            backgroundImage: NetworkImage(user.backgoundImage),
+            backgroundImage: NetworkImage(user.backgroundImage),
             radius: 20,
           ),
           title: Text(
